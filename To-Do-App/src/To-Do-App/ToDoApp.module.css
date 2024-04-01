@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(270deg, #050524, #040420);
+    color: #ffffff;
+}
+
+.toDoList {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0d0d2d9d, #0d0d2d9d);
+    color: #ffffff;
+}
+
+.toDoList h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputTask {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 0.3em;
+}
+
+.inputTask input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.inputTask button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.inputTask button:hover {
+    background-color: #0056b3;
+}
+
+.listItems ol {
+    padding: 0;
+}
+
+.listItems li {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.listItems .task {
+    flex: 1;
+}
+
+.listItem {
+    position: relative;
+  }
+  
+.editButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+  }
+
+.toogleButtons {
+    position: absolute;
+    top: 30px; 
+    right: 5px;
+    background-color: #03030dfc; 
+    border-radius: 5px; 
+    padding: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+.toogleButtons button {
+    display: block;
+    margin-bottom: 5px;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+.toogleButtons button:hover {
+    background-color: #c82333;
+  }
+  
+.activeButton {
+    background-color: #007bff; 
+    color: #fff; 
+  }
+  
